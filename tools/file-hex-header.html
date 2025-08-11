@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文件头字节码信息</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: #111248;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr class="header"><th>十六进制签名</th><th>ISO 8859-1</th><th>间隔字节</th><th>文件扩展名</th><th>描述</th></tr>
+    <tr><td>53 51 4c 69 74 65 20 66<br/>6f 72 6d 61 74 20 33 00</td><td>SQLite format 3.</td><td>0</td><td>sqlitedb<br/>sqlite<br/>db</td><td>SQLite数据库</td></tr>
+    <tr><td>00 00 01 00</td><td>....</td><td>0</td><td>ico</td><td>以ICO文件格式编码的计算机图标</td></tr>
+    <tr><td>1F 9D</td><td>..</td><td>0</td><td>z<br/>tar.z</td><td>压缩文件（通常为tar zip） 使用Lempel-Ziv-Welch算法</td></tr>
+    <tr><td>1F A0</td><td>.</td><td>0</td><td>z<br/>tar.z</td><td>压缩文件（通常为tar zip） 使用LZH算法</td></tr>
+    <tr><td>47 49 46 38 37 61 <br/>47 4946 38 39 61</td><td>GIF87a<br/>GIF89a</td><td>0</td><td>gif</td><td>以图形交换格式（GIF）编码的图像文件</td></tr>
+    <tr><td>FF D8 FF DB FF D8 <br/>FF E0 00 10 4A 46 49 46 00 01</td><td>ÿØÿÛ<br/>J.ÿ..JFIF..</td><td>0</td><td>jpg</td><td>JPEG原始或JFIF或Exif文件格式</td></tr>
+    <tr><td>FF D8 FF EE FF D8 <br/>FF E1 ?? ?? 45 78 69 66 00 00</td><td>ÿØÿî<br/>ÿØÿá..Exif..</td><td>0</td><td>jpg</td><td>JPEG原始或JFIF或Exif文件格式</td></tr>
+    <tr><td>52 61 72 21 1A 07 00</td><td>ar！</td><td>0</td><td>rar</td><td>RAR存档1.50版及更高版本</td></tr>
+    <tr><td>52 61 72 21 1A 07 01 00</td><td>ar！</td><td>0</td><td>rar</td><td>RAR存档版本5.0及更高版本</td></tr>
+    <tr><td>5A 4D</td><td>ZM</td><td>0</td><td>exe</td><td>	DOS ZM可执行文件格式及其后代（稀有）</td></tr>
+    <tr><td>7F 45 4C 46D</td><td>.ELF</td><td>0</td><td>一般无后缀</td><td>可执行和可链接格式</td></tr>
+    <tr><td>89 50 4E 47 0D 0A 1A 0A</td><td>PNG ...</td><td>0</td><td>png</td><td>以可移植网络图形格式编码的图像</td></tr>
+    <tr><td>EF BB BF</td><td>ï»¿</td><td>0</td><td>任意</td><td>UTF-8 编码的Unicode 字节顺序标记，通常在文本文件中看到.</td></tr>
+    <tr><td>FF FE</td><td>..</td><td>0</td><td>任意</td><td>用于标识 UTF-16 Little Endian编码数据的字节序标记</td></tr>
+    <tr><td>FE FF</td><td>..</td><td>0</td><td>任意</td><td>用于标识 UTF-16 Big Endian编码数据的字节序标记</td></tr>
+    <tr><td>FF FE 00 00</td><td>....</td><td>0</td><td>任意</td><td>用于标识 UTF-32 Little Endian编码数据的字节序标记</td></tr>
+    <tr><td>78 01 73 0D 62 62 60</td><td>xsbb`</td><td>0</td><td>dmg</td><td>苹果磁盘映像文件</td></tr>
+    <tr><td>37 7A BC AF 27 1C</td><td>7z¼'</td><td>0</td><td>7z</td><td>7z压缩文件格式</td></tr>
+    <tr><td>1F 8B</td><td>..</td><td>0</td><td>gz<br/>tar.gz</td><td>GZIP压缩文件</td></tr>
+
+</table>
+一部分内容由 AI 生成，如有错误请在 github 仓库中添加新的 issus： https://github.com/Sa11Sec/Sa11Sec.github.io/issues<br/>
+其他请参考：http://doc.chacuo.net/filehead
+</body>
+</html>
